@@ -24,8 +24,10 @@ public class UserResource {
 //    }
 
     @GET
-    @Path("/users")
-    public Uni<UserModel> users() {
-        return userService.getUsers();
+    @Path("/users/{page}")
+    public Uni<PagedUsers> users(Long page) {
+        System.out.println("came here in user resource: " + page);
+        return userService.getUsers(page);
     }
+
 }

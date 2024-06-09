@@ -3,6 +3,7 @@ package in.zybernau;
 import io.smallrye.mutiny.Uni;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 import java.util.Set;
@@ -12,5 +13,6 @@ import java.util.Set;
 public interface UserService {
 
     @GET
-    Uni<UserModel> getUsers();
+    @Path("/{page}")
+    Uni<PagedUsers> getUsers( @PathParam("page") Long page);
 }
