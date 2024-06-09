@@ -1,11 +1,10 @@
 # demo-rest-client-311
 ## please refer the below project for the rest api used in this project.
+- Click the [link](https://github.com/zybernau/quarkus_code) here
 
 ``` 
   https://github.com/zybernau/quarkus_code
 ```  
-
-(https://github.com/zybernau/quarkus_code)
 
 ...
 
